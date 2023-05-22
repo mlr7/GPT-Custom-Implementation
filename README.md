@@ -3,6 +3,10 @@ Local GPT implementation with custom domain-specific data
 
 GPT (Generative Pretrained Transformer) is a family and transformer neural networks created by OpenAI, with GPT releases starting in 2018.
 
+GPT in context, from Srivastava-2022 (see below)
+
+![](img/pic_arduino_nano.png)
+
 ## Dataset Links
 
 IMDB Sentiment: https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
@@ -37,6 +41,26 @@ Maybe: **GPT-3.5** Turbo likely has around **30 billion** parameters
 
 Maybe: **GPT-4** is likely to have been trained with **1 trillion** or 100 trillion parameters (rumors)
 
+## GPT Parameters that can be Tuned
+
+These parameters can be adjusted when interacting with GPT-3:
+
+**model**: The model parameter specifies the version of the model to be used. For example, "text-davinci-002", "text-curie-002", "text-babbage-002", "text-ada-002", etc. Each model has different capabilities in terms of language understanding and generation.
+
+**prompt**: This is the input text that you provide to the model. The model will generate a response based on this input. There's no strict limit to the length of the prompt, but keep in mind that the total tokens (input + output) must be under the model's maximum limit (e.g., 4096 tokens for "text-davinci-002").
+
+**max_tokens**: This parameter specifies the maximum length of the model’s response. This can be any integer value up to the model's maximum limit. For example, if you set max_tokens to 100, the model's response will be cut off after 100 tokens.
+
+**temperature**: This is a value between 0 and 1 that controls the randomness of the model's responses. A higher value (closer to 1) makes the output more random, while a lower value (closer to 0) makes the output more deterministic.
+
+**top_p**: Also known as nucleus sampling, this parameter is a value between 0 and 1 that controls the diversity of the response. A higher value will allow more diversity in the responses, whereas a lower value will limit the model's choice of next words to a smaller set.
+
+**frequency_penalty**: This is a value between 0 and 1 that controls the penalty for using frequent tokens. A higher value will make the model less likely to use common words and phrases.
+
+**presence_penalty**: This is a value between 0 and 1 that controls the penalty for introducing new concepts into the conversation. A higher value will make the model more likely to stick to the topics and concepts already mentioned in the conversation.
+
+## GPT/LLM Scaling
+
 Kaplan Scaling (Jarad Kaplan)
 
 Chinchilla Scaling (Chinchilla proposed a mathematical formulation, known as compute-optimal scaling laws, to explain how the performance of a language model decreases as the model size (N) and the number of tokens (D) increase.)
@@ -63,21 +87,3 @@ Srivastava, Aarohi, Abhinav Rastogi, Abhishek Rao, Abu Awal Md Shoeb, Abubakar A
 
 ![](img/pic_arduino_nano.png)
 
-
-## GPT Parameters that can be Tuned
-
-These parameters can be adjusted when interacting with GPT-3:
-
-**model**: The model parameter specifies the version of the model to be used. For example, "text-davinci-002", "text-curie-002", "text-babbage-002", "text-ada-002", etc. Each model has different capabilities in terms of language understanding and generation.
-
-**prompt**: This is the input text that you provide to the model. The model will generate a response based on this input. There's no strict limit to the length of the prompt, but keep in mind that the total tokens (input + output) must be under the model's maximum limit (e.g., 4096 tokens for "text-davinci-002").
-
-**max_tokens**: This parameter specifies the maximum length of the model’s response. This can be any integer value up to the model's maximum limit. For example, if you set max_tokens to 100, the model's response will be cut off after 100 tokens.
-
-**temperature**: This is a value between 0 and 1 that controls the randomness of the model's responses. A higher value (closer to 1) makes the output more random, while a lower value (closer to 0) makes the output more deterministic.
-
-**top_p**: Also known as nucleus sampling, this parameter is a value between 0 and 1 that controls the diversity of the response. A higher value will allow more diversity in the responses, whereas a lower value will limit the model's choice of next words to a smaller set.
-
-**frequency_penalty**: This is a value between 0 and 1 that controls the penalty for using frequent tokens. A higher value will make the model less likely to use common words and phrases.
-
-**presence_penalty**: This is a value between 0 and 1 that controls the penalty for introducing new concepts into the conversation. A higher value will make the model more likely to stick to the topics and concepts already mentioned in the conversation.
