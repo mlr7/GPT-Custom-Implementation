@@ -66,7 +66,7 @@ Srivastava, Aarohi, Abhinav Rastogi, Abhishek Rao, Abu Awal Md Shoeb, Abubakar A
 
 These parameters can be adjusted when interacting with GPT-3:
 
-*model: The model parameter specifies the version of the model to be used. For example, "text-davinci-002", "text-curie-002", "text-babbage-002", "text-ada-002", etc. Each model has different capabilities in terms of language understanding and generation.
+*model*: The model parameter specifies the version of the model to be used. For example, "text-davinci-002", "text-curie-002", "text-babbage-002", "text-ada-002", etc. Each model has different capabilities in terms of language understanding and generation.
 
 *prompt: This is the input text that you provide to the model. The model will generate a response based on this input. There's no strict limit to the length of the prompt, but keep in mind that the total tokens (input + output) must be under the model's maximum limit (e.g., 4096 tokens for "text-davinci-002").
 
