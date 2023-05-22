@@ -5,7 +5,7 @@ GPT (Generative Pretrained Transformer) is a family and transformer neural netwo
 
 GPT in context, from Srivastava-2022 (see below)
 
-![](img/pic_arduino_nano.png)
+![](img/scaling_imitation_game.png)
 
 ## Dataset Links
 
@@ -85,5 +85,5 @@ It's important to note that these are empirical observations, based on a range o
 
 Srivastava, Aarohi, Abhinav Rastogi, Abhishek Rao, Abu Awal Md Shoeb, Abubakar Abid, Adam Fisch, Adam R. Brown et al. "Beyond the imitation game: Quantifying and extrapolating the capabilities of language models." arXiv preprint arXiv:2206.04615 (2022).
 
-![](img/pic_arduino_nano.png)
+![](img/scaling_imitation_game.png)
 
