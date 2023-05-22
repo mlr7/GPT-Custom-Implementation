@@ -14,5 +14,5 @@ Stanford: Alpaca (Alpaca 7B, a model fine-tuned from the LLaMA 7B model on 52K i
 
 ## Further reading
 
-# https://github.com/davidADSP/Generative_Deep_Learning_2nd_Edition/blob/main/notebooks/09_transformer/gpt/gpt.ipynb
-# https://keras.io/examples/generative/text_generation_with_miniature_gpt/
+https://github.com/davidADSP/Generative_Deep_Learning_2nd_Edition/blob/main/notebooks/09_transformer/gpt/gpt.ipynb
+https://keras.io/examples/generative/text_generation_with_miniature_gpt/
